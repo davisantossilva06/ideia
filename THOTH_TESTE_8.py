@@ -525,7 +525,7 @@ class GoogleDriveCliente:
                     hid = self._upload_arquivo(arq, parent)
                     ids["arquivos"].append({"nome": str(rel), "id": hid})
                     enviados += arq.stat().st_size
-
+#d
         manifest = {
             "gerado_em": datetime.utcnow().isoformat()+"Z",
             "tamanho_total_bytes": total_bytes,
